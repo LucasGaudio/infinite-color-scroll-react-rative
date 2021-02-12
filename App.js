@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, View, TouchableOpacity, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, SafeAreaView } from "react-native";
 
 export default function App() {
 	const [boxes, setBoxes] = useState([]);
@@ -7,7 +7,7 @@ export default function App() {
 	const renderListItem = itemData => {
 		return (
 			<View style={styles.hero}>
-				<TouchableOpacity
+				<View
 					key={itemData.index}
 					style={{
 						width: "100%",
@@ -27,7 +27,7 @@ export default function App() {
 								: itemData.item.bg}
 						</Text>
 					</View>
-				</TouchableOpacity>
+				</View>
 			</View>
 		);
 	};
@@ -43,11 +43,13 @@ export default function App() {
 	}, [boxes]);
 
 	return (
-		<FlatList
-			data={boxes}
-			renderItem={renderListItem}
-			keyExtractor={(item, index) => "key" + index}
-		/>
+		<SafeAreaView>
+			<FlatList
+				data={boxes}
+				renderItem={renderListItem}
+				keyExtractor={(item, index) => "key" + index}
+			/>
+		</SafeAreaView>
 	);
 }
 
