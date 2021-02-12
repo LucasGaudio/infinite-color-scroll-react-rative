@@ -1,7 +1,3 @@
-<h1 align="center">
-    <img alt="icon" title="icon" src="public/favicon.svg" width="13%"  />
-</h1>
-
 <p align="center">
   <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
