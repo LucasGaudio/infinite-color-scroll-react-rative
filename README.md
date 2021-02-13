@@ -6,7 +6,7 @@
 <br>
 
 <p align="center">
-  <img alt="Sea Jorney intro" src="assets/git.png" width="100%" height="100% >
+  <img alt="Sea Jorney intro" src="assets/git.png" width="100%" height="100%" >
 </p>
 
 ## 🚀 Technology
